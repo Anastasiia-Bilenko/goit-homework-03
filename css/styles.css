@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--dark);
   background: var(--white);
+  margin: 0;
 }
 :root {
   --primary-brand: #4d5ae5;
@@ -24,6 +25,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .logo-web {
   color: var(--primary-brand);
@@ -31,9 +33,7 @@ body {
 .logo-studio {
   color: var(--dark);
 }
-.stud-portf-con {
-  list-style: none;
-}
+
 .navigation {
   font-weight: 500;
   font-size: 16px;
@@ -46,8 +46,17 @@ body {
 .navigation:active {
   color: var(--pressed-state);
 }
+.address-cont {
+  display: flex;
+  margin-left: 332px;
+}
 .contacts-list {
   list-style: none;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.stud-portf-con {
+  gap: 40px;
 }
 .contacts {
   font-weight: 400;
@@ -60,6 +69,7 @@ body {
 }
 .section-item {
   background: var(--hero-background);
+  display: block;
 }
 .main-header {
   font-size: 56px;
@@ -67,6 +77,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--white);
   width: 550px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 .order {
   background: var(--primary-brand);
@@ -75,17 +87,27 @@ body {
   font-size: 16px;
   letter-spacing: 0.04em;
   color: var(--white);
+  text-align: center;
+  margin-left: 200px;
+  border: 0;
+  width: 169px;
+  height: 56px;
 }
 .order:hover,
 .order:focus {
-  background: var(--pressed-state1);
+  background: var(--pressed-state)
 }
 .advanteges-list,
 .wp-img,
 .contacts-list,
 .portolio-butt,
-.row {
+.row,
+.stud-portf-con,
+.personal {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .advant-header {
@@ -102,19 +124,23 @@ body {
   letter-spacing: 0.02em;
   color: var(--text);
 }
-.header-proc ,
+.header-proc,
 .header-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var();
+  text-align: center;
+  margin-bottom: 72px;
 }
 .name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.3;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .position {
   font-weight: 400;
@@ -122,15 +148,24 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+  text-align: center;
 }
-.team {
+.section-team {
+  padding: 120px 156px;
   background: var(--light);
 }
 ul.personal > li {
   background: var(--white);
+  height: 380px;
+}
+li.worker > img {
+  margin-bottom: 32px;
 }
 .footer {
   background-color: var(--dark);
+  padding-top: 100px ;
+  padding-bottom: 100px;
+  padding-left: 156px;
 }
 .logo-f {
   font-family: "Raleway", sans-serif;
@@ -140,12 +175,15 @@ ul.personal > li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  
 }
 .logo-web-f {
   color: var(--primary-brand);
+  
 }
 .logo-studio-f {
   color: var(--light);
+ 
 }
 .text-f {
   font-weight: 400;
@@ -153,6 +191,8 @@ ul.personal > li {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent);
+  width: 264px;
+  margin-top: 16px;
 }
 .butt {
   font-weight: 500;
@@ -189,4 +229,49 @@ ul.personal > li {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container.header-cont {
+  display: flex;
+}
+.nav-header {
+  display: flex;
+  justify-content: flex-start;
+}
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.section-item {
+  max-height: 600px;
+  padding-top: 260px;
+  padding-left: 472px;
+  padding-bottom: 206px;
+}
+.section-features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 156px;
+  padding-left: 156px;
+}
+.section-team {
+  padding: 120px 156px;
+}
+.main-portfolio{
+  
 }

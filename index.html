@@ -15,35 +15,39 @@
 <body>
 
     <header>
-        <nav>
-            <a href="./index.html" class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-            <ul class="stud-portf-con">
-                <li> <a href="./index.html" class="navigation">Studio  </a> </li>
-                <li> <a href="./portfolio.html" class="navigation"> Portfolio</a></li>
-                <li> <a href="" class="navigation"> Contacts</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul class="contacts-list">
-                <li><a href="mailto:info@devstudio.com" class="contacts"> info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="contacts"> +11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+        <div class="container header-cont">
+            <nav class="nav-header">
+                <a href="./index.html" class="logo"><span class="logo-web">Web</span><span
+                        class="logo-studio">Studio</span></a>
+                <ul class="stud-portf-con">
+                    <li> <a href="./index.html" class="navigation">Studio </a> </li>
+                    <li> <a href="./portfolio.html" class="navigation"> Portfolio</a></li>
+                    <li> <a href="" class="navigation"> Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="address-cont">
+                <ul class="contacts-list">
+                    <li><a href="mailto:info@devstudio.com" class="contacts"> info@devstudio.com</a></li>
+                    <li><a href="tel:+110001111111" class="contacts"> +11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
 
     </header>
     <main>
         <!-- hero image-->
         <section class="section-item">
-            <h1 class="main-header">Effective Solutions
-                for Your Business</h1>
-            <button type="button" class="order"> Order Service</button>
-
+            <div class="container">
+                <h1 class="main-header">Effective Solutions
+                    for Your Business</h1>
+                <button type="button" class="order"> Order Service</button>
+            </div>
         </section>
         <!-- section 1-->
         <section class="section-features">
             <h2 class="visually-hidden">Advanteges</h2>
             <ul class="advanteges-list">
-                <li >
+                <li>
                     <h3 class="advant-header">Strategy</h3>
                     <p class="advant-text">Our goal is to identify the business
                         problem to walk away with the perfect and creative solution. </p>
@@ -86,30 +90,30 @@
 
         </section>
         <!-- section 3-->
-        <section class="team">
+        <section class="section-team">
             <h2 class="header-team">Our Team</h2>
             <ul class="personal">
-                <li class="mark">
+                <li class="worker">
 
                     <img src="./images/img2.jpg" alt="Photo Mark Guerrero" width="264">
                     <h3 class="name">Mark Guerrero</h3>
                     <p class="position">Product Designer</p>
 
                 </li>
-                <li class="tom">
+                <li class="worker">
 
                     <img src="./images/img3.jpg" alt="Photo Tom Ford" width="264">
                     <h3 class="name">Tom Ford</h3>
                     <p class="position">Frontend Developer</p>
                 </li>
-                <li class="camila">
+                <li class="worker">
 
                     <img src="./images/img4.jpg" alt="Photo Camila Garcia" width="264">
                     <h3 class="name">Camila Garcia</h3>
                     <p class="position"> Marketing </p>
 
                 </li>
-                <li class="daniel">
+                <li class="worker">
 
                     <img src="./images/img1.jpg" alt="Photo Daniel Wilson" width="264">
                     <h3 class="name">Daniel Wilson</h3>
@@ -120,11 +124,13 @@
         </section>
     </main>
     <footer class="footer">
+        <div class="container">
         <a href="./index.html" class="logo-f"><span class="logo-web-f"> Web</span><span class="logo-studio-f">
                 Studio</span></a>
         <p class="text-f">Increase the flow of customers and sales for your business with digital marketing & growth
             solutions.
         </p>
+    </div>
     </footer>
 
 
