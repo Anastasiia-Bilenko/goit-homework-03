@@ -16,6 +16,22 @@ body {
   --hero-background: #2e2f42;
   --white: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -25,8 +41,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top:24px ;
+  padding-bottom:24px ;
   
 }
 .logo-web {
@@ -44,8 +60,19 @@ body {
   color: var(--dark);
   text-decoration: none;
   list-style: none;
-
-
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.stud-portf-con{
+  display: flex;
+  justify-content:flex-start ;
+  gap: 40px;
+  text-decoration: none;
+  list-style: none
+}
+.stud-portf-con>li{
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .navigation:active {
   color: var(--pressed-state);
@@ -56,15 +83,15 @@ body {
 }
 .contacts-list {
   list-style: none;
+  display: flex;
   justify-content: flex-end;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
 }
-.stud-portf-con {
-  gap: 40px;
-  padding-top: 24px;
+
+.contacts-list>li{
   padding-bottom: 24px;
+  padding-top: 24px;
 }
 .contacts {
   font-weight: 400;
@@ -74,6 +101,8 @@ body {
   color: var(--text);
   font-style: normal;
   text-decoration: none;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 
@@ -108,10 +137,7 @@ body {
 }
 .advanteges-list,
 .wp-img,
-.contacts-list,
 .portolio-butt,
-.row,
-.stud-portf-con,
 .personal {
   list-style: none;
   display: flex;
@@ -125,14 +151,19 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .advant-text {
- flex-basis: calc((1140px - 3 * 24px) / 4);
+ flex-basis: calc((100% - 3 * 24px) / 4);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+}
+.advanteges-li{
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  max-width: 264px;
 }
 .header-proc,
 .header-team {
@@ -150,6 +181,7 @@ body {
   line-height: 1.3;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
  
 }
 .position {
@@ -166,7 +198,7 @@ padding-bottom:32px ;
 }
 ul.personal > li {
   background: var(--white);
-  flex-basis: calc((1140px - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
   max-width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -247,20 +279,10 @@ ul.personal > li {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
 .container {
   max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .container.header-cont {
   display: flex;
@@ -297,14 +319,17 @@ padding-bottom: 120px;
 .row > li {
   box-sizing: border-box;
   background: var(--white);
-  flex-basis: calc((1140px - 2 * 24px) / 3);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 .row {
   flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  gap:48px 24px;
 }
 
 .portolio-butt{
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .row-text{
  padding-top: 32px; 
